@@ -1,0 +1,33 @@
+<div class="search">
+    <input type="text" value="" placeholder="Type Company Name" title="Enter Company Name" #companyName>
+    <button type ="button" title="Click" (click) = "getStockValue(companyName.value)"> Search </button>
+</div>
+  
+<div class="currentcompany">
+    <table border="2">
+        <tr *ngIf = "this.currentCompanyStockValue !== undefined">
+            <h2>
+            <td>{{this.currentCompanyStockValue.companyName}}</td>
+            <td *ngFor = "let dataValue of (this.currentCompanyStockValue.values)">{{dataValue}}</td>
+            </h2>
+        </tr>
+    </table>
+  </div> <br />
+  <div class = "pastSearches">
+    <h2 class="history">Search History</h2>
+    <br />
+    <table border="2">
+        <tr>
+            <th >Company Name</th>
+            <th>Time</th>
+        </tr>
+        <tr *ngFor = "let pastCompany of pastCompanyYouSearch" >
+            <td class ="table" (click) = "this.getStockValue(pastCompany.companyName)"> {{pastCompany.companyName}}</td>
+            <td>{{pastCompany.searchTime}}</td>
+            <td *ngFor = "let values of pastCompany.values">{{values}}</td>    
+        </tr>
+    </table>
+        <div class="goback">
+          <button routerLink="" >Home</button>
+        </div>
+  </div>

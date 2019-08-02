@@ -1,0 +1,66 @@
+input{
+    background-color: rgb(184, 190, 197);
+    height: 3em;
+    padding : 0.8em;
+    width : 90% ;
+    border-radius: 10em;
+    color: aliceblue;
+}
+
+.search button{
+    background-color: rgb(88, 105, 138);
+    display: inline-block;
+    font-size: 1em;
+    height: 3em;
+    padding: 0.8em;
+    text-align: center;
+    width: 10;
+    border-radius: 0.5em;
+    cursor: pointer;
+    
+}
+
+.currentcompany table{
+    background-color: rgb(163, 191, 223);
+    height: auto;
+    padding: auto;
+    widows: inherit;
+    width: 100%;
+    border-radius: 0.5em;
+     
+}
+.pastvalue
+{
+ background: rgb(88, 83, 78);
+ display: block;
+ font-size: 1.5em;
+ padding: 1em;
+ text-align: center;
+ text-decoration: none;
+ color:rgb(226, 212, 212);
+}
+.pastSearches table{
+    background-color: rgb(218, 227, 236);
+    height: auto;
+    padding: auto;
+    width: 100%;
+
+}
+.goback {
+    font: 100;
+    background-color: rgb(210, 216, 228);
+    display: inline-block;
+    font-size: 1em;
+    height: 1em;
+    padding: 0.8em;
+    text-align: center;
+    width: 10;
+    border-radius: 0.5em;
+    cursor: pointer;  
+    position: absolute;
+}
+
+.table {
+  cursor: pointer;
+}
+

@@ -1,0 +1,24 @@
+
+input{
+    background-color: rgb(184, 190, 197);
+    height: 3em;
+    padding : 0.8em;
+    width : 90% ;
+    border-radius: 10em;
+    color: aliceblue;
+}
+.search button{
+    background-color: rgb(88, 105, 138);
+    display: inline-block;
+    font-size: 1em;
+    height: 3em;
+    padding: 0.8em;
+    text-align: center;
+    width: 10;
+    border-radius: 0.5em;
+    cursor: pointer;
+    
+}
+
+
+
